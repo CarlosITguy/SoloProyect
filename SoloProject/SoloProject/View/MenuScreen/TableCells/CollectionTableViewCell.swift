@@ -25,6 +25,7 @@ class CollectionTableViewCell: UITableViewCell {
     
     
     func setUpCollectionView(){
+        backgroundColor = .red
         let layoutCV = UICollectionViewFlowLayout()
         
         layoutCV.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
@@ -33,9 +34,8 @@ class CollectionTableViewCell: UITableViewCell {
         let topRatCollView = UICollectionView(frame: .zero, collectionViewLayout: layoutCV)
         topRatCollView.translatesAutoresizingMaskIntoConstraints = false
         
+       
         contentView.addSubview(topRatCollView)
-        
-        
         topRatCollView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor , constant: 8).isActive = true
         topRatCollView.topAnchor.constraint(equalTo: contentView.topAnchor , constant: 8).isActive = true
         topRatCollView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor , constant: 8).isActive = true

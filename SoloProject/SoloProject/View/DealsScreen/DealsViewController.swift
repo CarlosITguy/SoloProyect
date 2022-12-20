@@ -24,7 +24,7 @@ class DealsViewController: UIViewController {
 //
 //
 //    }
-    
+  
     
     
     override func viewDidLoad() {

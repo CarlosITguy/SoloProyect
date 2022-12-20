@@ -76,6 +76,16 @@ class TopPicksCollectionViewCell: UICollectionViewCell {
         backgroundColor = .blue
         contentView.backgroundColor = .brown
         
+        let redview = UIView()
+        redview.translatesAutoresizingMaskIntoConstraints = false
+
+        contentView.addSubview(redview)
+        redview.backgroundColor = .red
+        redview.leadingAnchor.constraint(equalTo: contentView.leadingAnchor , constant: -8).isActive = true
+        redview.topAnchor.constraint(equalTo: contentView.topAnchor , constant: -30).isActive = true
+        redview.trailingAnchor.constraint(equalTo: contentView.trailingAnchor , constant: 8).isActive = true
+        redview.bottomAnchor.constraint(equalTo: contentView.centerYAnchor , constant: 8).isActive = true
+        
         //        contentView.addSubview(self.songImage)
         contentView.addSubview(self.topPickNameLabel)
         contentView.addSubview(self.songImage)

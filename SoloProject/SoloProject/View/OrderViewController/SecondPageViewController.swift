@@ -9,6 +9,14 @@ import UIKit
 
 class SecondPageViewController: UIViewController {
 
+    override func viewWillAppear(_ animated: Bool) {
+//        isRoot()
+        print("La raiz")
+        print("La raiz desaparecio \(DealsNavegationViewController().navigationBar.backItem == nil)")
+        self.tabBarController?.accessibilityElementCount()
+        print( "La raiz desaparecio \(self.navigationController?.navigationBar)")
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()}
 //    }

@@ -9,7 +9,7 @@ import UIKit
 
 class labelsTableViewCells: UITableViewCell {
     
-    
+//    var MenuRedBackground : UIView = UIView(frame: .zero)
     
     
     var attributedString = NSMutableAttributedString.init(string: "Dommy Text")
@@ -45,6 +45,7 @@ class labelsTableViewCells: UITableViewCell {
     
     
     func setUpLabel (){
+//        backgroundColor = .clear
         let pl = self.premadeLabel
         //
         //        attributedString.addAttribute(NSAttributedString.Key.underlineStyle, value: 1, range: NSRange.init(location: 0, length: attributedString.length));
@@ -63,6 +64,8 @@ class labelsTableViewCells: UITableViewCell {
         pl .widthAnchor.constraint(equalToConstant: 270).isActive = true
         
         self.premadeLabel = pl
+        
+        
         
     }
 }

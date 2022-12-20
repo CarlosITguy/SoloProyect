@@ -11,10 +11,16 @@ class testrootViewController: UITableViewController {
     
 
     override func viewWillAppear(_ animated: Bool) {
-    
+//        isRoot()
+        print("La raiz \(DealsNavegationViewController().navigationBar.backItem == nil)")
+        self.navigationController?.navigationBar.backgroundColor = .purple
+        DealsNavegationViewController().setUpNavBar()
+        print("La raiz aparecio")
     }
     override func viewWillDisappear(_ animated: Bool) {
-        
+//        isNotRoot()
+        print("La raiz desaparecio")
+
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,16 +30,10 @@ class testrootViewController: UITableViewController {
     
     func isRoot(){
         
+        let nav = DealsNavegationViewController()
         
-        let button1 = UIButton(type: .system)
-        if self.navigationBar.backItem == nil {
-            button1.setImage(UIImage(named: "ArbyshatWhite"), for: .normal)
-        } else {
-            button1.setImage(UIImage(systemName: "arrow.backward"), for: .normal)
-
-        }
     }
-    
+   
 
     /*
     // MARK: - Navigation
