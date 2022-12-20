@@ -7,48 +7,22 @@
 
 import UIKit
 
-class DealsNavegationViewController: UINavigationController {
-    
+class NavegationViewController: UINavigationController {
+    let settingVC = settingViewController()
+
     var button1 : UIButton = UIButton(frame: .zero)
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setUpNavBar()
-        
-        
+        settingVC.view.backgroundColor = .purple
         
     }
-//    override func viewDidAppear(_ animated: Bool) {
-//
-//        super.viewWillAppear(animated)
-//
-//        if self.navigationBar.backItem == nil {
-////            self.button1.setImage(UIImage(named: "ArbyshatWhite"), for: .normal)
-//        } else {
-//            self.button1.setImage(UIImage(systemName: "arrow.backward"), for: .normal)
-//
-//        }
-//
-//        if self.viewControllers.count > 1 {
-//            self.button1.setImage(UIImage(systemName: "arrow.backward"), for: .normal)
-//        } else {
-////            self.button1.setImage(UIImage(named: "ArbyshatWhite"), for: .normal)
-//        }
-//    }
-    
-    
-    //
-    
     func setUpNavBar(){
-        //        print("this is the number of view controllers \(self.navigationBar.backItem)")
-        
-        print("La raiz Estoy corriendo el setupBar")
-        
-        
+
         let redBackground = UIView()
         redBackground.backgroundColor = .red
-        
         
         
         let stackView = UIStackView()
@@ -119,9 +93,9 @@ class DealsNavegationViewController: UINavigationController {
         let button2 = UIButton(type: .system)
         stackView.addArrangedSubview(button2)
         button2.setImage(UIImage(systemName: "ellipsis"), for: UIControl.State())
-        
-        button1.addTarget(self, action: #selector(self.popViewController(animated:)), for: .touchUpInside)
+//        button2.addTarget(self, action: #selector(button2), for: .touchUpInside)
 
+        button2.addTarget(self, action: #selector(ShowSettingViewController), for: .touchUpInside)
         
         // Optionally, customize the stack view's appearance using its properties or appearance proxies
         stackView.backgroundColor = .red
@@ -130,30 +104,10 @@ class DealsNavegationViewController: UINavigationController {
         
         self.button1 = button1
     }
-    
+    @objc func ShowSettingViewController() {
+        print(" Botton press ")
+        let SVC = settingVC
+        present(SVC, animated: true, completion: nil)        //        
+    }
+
 }
-
-class logInSetigsTableView : UITableViewController {
-    
-    
-    
-    
-    
-    
-}
-
-
-
-
-//
-//    @objc func back(_ sender: Any) {
-//    }
-
-//    @objc func backButtonTapped() {
-//        print("Tiene que regresar")
-////        self.navigationController?.popViewController(animated:)
-//                UIApplication.shared.sendAction(#selector(self.popViewController(animated:)), to: nil, from: self, for: nil)
-//
-//
-//        //        self.navigationController?.popViewController(animated: true)
-//    }

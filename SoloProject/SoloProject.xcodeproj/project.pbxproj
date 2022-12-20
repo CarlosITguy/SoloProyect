@@ -17,12 +17,13 @@
 		027F571C2946FAC4003AEE0C /* SoloProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027F571B2946FAC4003AEE0C /* SoloProjectUITestsLaunchTests.swift */; };
 		02A237EA2948B76E0054A397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A237E92948B76E0054A397 /* Main.storyboard */; };
 		02A968EA294E65D40006A4D0 /* DealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A968E9294E65D40006A4D0 /* DealsViewController.swift */; };
-		02A968F1294EB5020006A4D0 /* DealsNavegationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A968F0294EB5020006A4D0 /* DealsNavegationViewController.swift */; };
+		02A968F1294EB5020006A4D0 /* NavegationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A968F0294EB5020006A4D0 /* NavegationViewController.swift */; };
 		02A968F3294FC06F0006A4D0 /* TesterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A968F2294FC06F0006A4D0 /* TesterViewController.swift */; };
 		02A968F5294FE35D0006A4D0 /* SecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A968F4294FE35D0006A4D0 /* SecondPageViewController.swift */; };
 		02A968F7295033F60006A4D0 /* testrootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A968F6295033F60006A4D0 /* testrootViewController.swift */; };
 		02A968F92950E3C10006A4D0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A968F82950E3C10006A4D0 /* MenuViewController.swift */; };
 		02A968FB2950E5460006A4D0 /* MenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A968FA2950E5460006A4D0 /* MenuNavigationController.swift */; };
+		02A968FE295194E10006A4D0 /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A968FD295194E10006A4D0 /* settingViewController.swift */; };
 		02AA8CA92949A3D300A9216E /* labelsTableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA8CA82949A3D300A9216E /* labelsTableViewCells.swift */; };
 		02AA8CAB2949A6FA00A9216E /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA8CAA2949A6FA00A9216E /* CollectionTableViewCell.swift */; };
 		02AA8CAF294A3C6100A9216E /* TopPicksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA8CAE294A3C6100A9216E /* TopPicksCollectionViewCell.swift */; };
@@ -63,12 +64,13 @@
 		027F571B2946FAC4003AEE0C /* SoloProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		02A237E92948B76E0054A397 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = SoloProject/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		02A968E9294E65D40006A4D0 /* DealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsViewController.swift; sourceTree = "<group>"; };
-		02A968F0294EB5020006A4D0 /* DealsNavegationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsNavegationViewController.swift; sourceTree = "<group>"; };
+		02A968F0294EB5020006A4D0 /* NavegationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavegationViewController.swift; sourceTree = "<group>"; };
 		02A968F2294FC06F0006A4D0 /* TesterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesterViewController.swift; sourceTree = "<group>"; };
 		02A968F4294FE35D0006A4D0 /* SecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageViewController.swift; sourceTree = "<group>"; };
 		02A968F6295033F60006A4D0 /* testrootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testrootViewController.swift; sourceTree = "<group>"; };
 		02A968F82950E3C10006A4D0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		02A968FA2950E5460006A4D0 /* MenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNavigationController.swift; sourceTree = "<group>"; };
+		02A968FD295194E10006A4D0 /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
 		02AA8CA82949A3D300A9216E /* labelsTableViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = labelsTableViewCells.swift; sourceTree = "<group>"; };
 		02AA8CAA2949A6FA00A9216E /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		02AA8CAE294A3C6100A9216E /* TopPicksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPicksCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -159,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				02A968F6295033F60006A4D0 /* testrootViewController.swift */,
-				02A968F0294EB5020006A4D0 /* DealsNavegationViewController.swift */,
 				02A968E9294E65D40006A4D0 /* DealsViewController.swift */,
 				02A968EB294E66390006A4D0 /* Cells */,
 			);
@@ -216,6 +217,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		02A968FC295194930006A4D0 /* Navegation */ = {
+			isa = PBXGroup;
+			children = (
+				02A968F0294EB5020006A4D0 /* NavegationViewController.swift */,
+				02A968FD295194E10006A4D0 /* settingViewController.swift */,
+			);
+			path = Navegation;
+			sourceTree = "<group>";
+		};
 		02AA8CA02949001800A9216E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +254,7 @@
 		02AA8CA32949001900A9216E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				02A968FC295194930006A4D0 /* Navegation */,
 				02A968E8294E65780006A4D0 /* MenuScreen */,
 				02A968ED294E66640006A4D0 /* BagScreen */,
 				02A968EC294E66480006A4D0 /* OrderViewController */,
@@ -417,13 +428,14 @@
 				02A968FB2950E5460006A4D0 /* MenuNavigationController.swift in Sources */,
 				02AA8CF2294B947000A9216E /* menuViewModel.swift in Sources */,
 				02AA8CF4294BA3E600A9216E /* NetworkManager.swift in Sources */,
-				02A968F1294EB5020006A4D0 /* DealsNavegationViewController.swift in Sources */,
+				02A968F1294EB5020006A4D0 /* NavegationViewController.swift in Sources */,
 				02AA8CAB2949A6FA00A9216E /* CollectionTableViewCell.swift in Sources */,
 				02AA8CB1294A53C300A9216E /* MealsTableViewCell.swift in Sources */,
 				02A968EA294E65D40006A4D0 /* DealsViewController.swift in Sources */,
 				027F56F92946FAC1003AEE0C /* AppDelegate.swift in Sources */,
 				02AA8CA92949A3D300A9216E /* labelsTableViewCells.swift in Sources */,
 				027F56FB2946FAC1003AEE0C /* SceneDelegate.swift in Sources */,
+				02A968FE295194E10006A4D0 /* settingViewController.swift in Sources */,
 				02A968F3294FC06F0006A4D0 /* TesterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

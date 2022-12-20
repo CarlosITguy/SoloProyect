@@ -10,7 +10,7 @@
         <!--Menu Navigation Controller-->
         <scene sceneID="eV7-S2-GX6">
             <objects>
-                <navigationController id="tdG-Oo-qDp" userLabel="Menu Navigation Controller" customClass="DealsNavegationViewController" customModule="SoloProject" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="tdG-Oo-qDp" userLabel="Menu Navigation Controller" customClass="NavegationViewController" customModule="SoloProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Menu" image="menucard.fill" catalog="system" id="VXm-vr-mMt"/>
                     <navigationItem key="navigationItem" id="DT9-XP-TMh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="B8B-eH-DJM">
@@ -122,7 +122,7 @@
         <!--Deals-->
         <scene sceneID="2uK-0F-JjI">
             <objects>
-                <navigationController id="T3b-r7-rzK" customClass="DealsNavegationViewController" customModule="SoloProject" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="T3b-r7-rzK" customClass="NavegationViewController" customModule="SoloProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Deals" id="1tT-M0-4MC"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lVJ-TU-QiO">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -218,7 +218,7 @@
         <!--Bag-->
         <scene sceneID="fzS-i1-hrl">
             <objects>
-                <navigationController hidesBottomBarWhenPushed="YES" id="SXm-Dn-fzr" customClass="DealsNavegationViewController" customModule="SoloProject" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController hidesBottomBarWhenPushed="YES" id="SXm-Dn-fzr" customClass="NavegationViewController" customModule="SoloProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Bag" id="j6r-Z5-XvT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="58N-gV-4ze">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>

@@ -12,9 +12,9 @@ class testrootViewController: UITableViewController {
 
     override func viewWillAppear(_ animated: Bool) {
 //        isRoot()
-        print("La raiz \(DealsNavegationViewController().navigationBar.backItem == nil)")
+        print("La raiz \(NavegationViewController().navigationBar.backItem == nil)")
         self.navigationController?.navigationBar.backgroundColor = .purple
-        DealsNavegationViewController().setUpNavBar()
+        NavegationViewController().setUpNavBar()
         print("La raiz aparecio")
     }
     override func viewWillDisappear(_ animated: Bool) {
@@ -30,7 +30,7 @@ class testrootViewController: UITableViewController {
     
     func isRoot(){
         
-        let nav = DealsNavegationViewController()
+        let nav = NavegationViewController()
         
     }
    
