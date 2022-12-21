@@ -44,6 +44,7 @@ class CollectionTableViewCell: UITableViewCell {
         topRatCollView.widthAnchor.constraint(equalToConstant: 350).isActive = true
         topRatCollView.register( TopPicksCollectionViewCell.self, forCellWithReuseIdentifier: "topRatedCollectionViewCell")
         topRatCollView.dataSource = self
+        topRatCollView.delegate = self
         self.topRatedCollectionView = topRatCollView
     }
     
@@ -67,4 +68,10 @@ extension CollectionTableViewCell : UICollectionViewDataSource {
     
     
     
+}
+extension CollectionTableViewCell : UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        print("Seleccione una celda de coleccion")
+    }
 }

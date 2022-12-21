@@ -8,7 +8,7 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-
+    var islogin = false
     @IBOutlet weak var JoinLabels: UIStackView!
     @IBOutlet weak var topMenuTableView: UITableView!
     override func viewDidLoad() {
@@ -17,14 +17,17 @@ class MenuViewController: UIViewController {
     }
     
     func setUp(){
-        JoinLabels.isHidden = true
-        topMenuTableView.translatesAutoresizingMaskIntoConstraints = false
+        if islogin {
+            JoinLabels.isHidden = true
+            topMenuTableView.translatesAutoresizingMaskIntoConstraints = false
             view.addSubview(topMenuTableView)
-        topMenuTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: -20).isActive = true
-        topMenuTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
-        topMenuTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 20).isActive = true
-        topMenuTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
-////        topMenuTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 197).isActive = true
+            topMenuTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: -20).isActive = true
+            topMenuTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
+            topMenuTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 20).isActive = true
+            topMenuTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+            
+        }
+////        topMenuTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 197).isActive = true}
 //        topMenuTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -0).isActive = true
 //        topMenuTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -0).isActive = true
         topMenuTableView.backgroundColor = .clear
